@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Yamete Sushi</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#555;text-decoration:none}a:hover{opacity:.7}
+.h2{margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:44px;color:#555}
+.h3{margin:0;font-family:'Fredoka',sans-serif;font-weight:500;font-size:24px;color:#555}
+.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 32px;border-radius:999px;font-weight:700;color:#555}
+.card{flex:1 1 260px;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.num{width:44px;height:44px;border-radius:50%;background:#D9D9D9;display:flex;align-items:center;justify-content:center;font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px;color:#000}
+</style>
+</helmet>
+<div style="background:#FFFFFF;color:#555;font-family:'Nunito',sans-serif;font-size:17px;line-height:1.6">
+
+<header style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:28px 48px 0">
+<a href="#topo"><img src="./assets/5935b92f4895e5b39519ecbfbc692e14.png" alt="Yamete Sushi" style="display:block;height:72px;width:auto"></a>
+<nav style="display:flex;flex-wrap:wrap;gap:28px;font-weight:700">
+<a href="#como-pedir">Como pedir</a><a href="#cardapio">Cardápio</a><a href="#combos">Combos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+</nav>
+<img src="./assets/4c1648018a8788e5cf97d0c446e9e603.png" alt="" aria-hidden="true" style="display:block;height:96px;width:auto">
+</header>
+
+<section id="topo" style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end;padding:0 0 0 48px">
+<div style="flex:1 1 360px;display:flex;flex-direction:column;gap:20px;padding-bottom:48px;align-self:center">
+<h1 style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:56px;line-height:1.1;color:#555">Sushi gostoso, direto da esteira</h1>
+<p style="margin:0;max-width:440px;font-size:19px">Uma mesa cheia de sabor e de bichinhos fofos. Peça para entrega ou retire na loja.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<a href="#como-pedir" class="btn" style="background:#F9DCDC">Fazer pedido</a>
+<a href="#cardapio" class="btn" style="background:#FFF1D1">Ver cardápio</a>
+</div>
+</div>
+<div style="flex:1 1 560px">
+<img src="./assets/acf65f87a21b745fa523a5c66d8c4594.png" alt="Personagens comendo sushi em uma mesa baixa" style="display:block;width:100%;height:auto">
+</div>
+</section>
+
+<img src="./assets/99f3a34898844dd4570e6c6c8fd92ebc.png" alt="" aria-hidden="true" style="display:block;width:100%;height:auto">
+
+<section id="como-pedir" style="padding:40px 48px 72px">
+<h2 class="h2" style="margin-bottom:40px">Como Pedir</h2>
+<div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between">
+<div style="flex:1 1 200px;display:flex;flex-direction:column;gap:10px"><div class="num">1</div><h3 class="h3">Escolha</h3><p style="margin:0">Veja o cardápio e separe seus sushis favoritos.</p></div>
+<div style="flex:1 1 200px;display:flex;flex-direction:column;gap:10px"><div class="num">2</div><h3 class="h3">Envie o pedido</h3><p style="margin:0">Pelo WhatsApp ou telefone: +55 19 99767-8772</p></div>
+<div style="flex:1 1 200px;display:flex;flex-direction:column;gap:10px"><div class="num">3</div><h3 class="h3">Pague</h3><p style="margin:0">Pix, cartão ou dinheiro, O que você tiver nós aceitamos!!</p></div>
+<div style="flex:1 1 200px;display:flex;flex-direction:column;gap:10px"><div class="num">4</div><h3 class="h3">Receba</h3><p style="margin:0">Entregamos na sua casa ou deixamos pronto no balcão.</p></div>
+</div>
+</section>
+
+<section id="cardapio" style="padding:64px 48px;background:#FFF8EA">
+<h2 class="h2" style="margin-bottom:8px">Cardápio</h2>
+<p style="margin:0 0 36px">Tudo feito na hora, com ingredientes frescos.</p>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div class="card" style="background:#F9DCDC"><h3 class="h3">Nigiri</h3><p style="margin:0">Salmão, atum, camarão e tamago sobre arroz temperado.</p><strong>[sla man]</strong></div>
+<div class="card" style="background:#DCEFE6"><h3 class="h3">Uramaki</h3><p style="margin:0">Rolinhos com gergelim: Philadelphia, skin e hot.</p><strong>[sla]</strong></div>
+<div class="card" style="background:#FFFFFF"><h3 class="h3">Temaki</h3><p style="margin:0">Cones de alga crocante recheados na hora.</p><strong>[sla]</strong></div>
+<div class="card" style="background:#F3E3C3"><h3 class="h3">Sobremesas</h3><p style="margin:0">Docinhos para fechar a refeição. [SEUS ITENS]</p><strong>[sla]</strong></div>
+</div>
+</section>
+
+<section id="combos" style="padding:72px 48px;display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div style="flex:0 1 180px;display:flex;justify-content:center"><img src="./assets/fa9e0f567674b89d543309277ff56716.png" alt="" aria-hidden="true" style="display:block;width:150px;height:auto"></div>
+<div style="flex:1 1 520px;display:flex;flex-direction:column;gap:20px">
+<h2 class="h2">Combos para dividir</h2>
+<div style="display:flex;flex-wrap:wrap;gap:20px">
+<div class="card" style="background:#DCEFE6;padding:22px"><h3 class="h3">Combo Solo</h3><p style="margin:0">[Nº DE PEÇAS] peças</p><strong>[SEU PREÇO]</strong></div>
+<div class="card" style="background:#F9DCDC;padding:22px"><h3 class="h3">Combo Dupla</h3><p style="margin:0">[Nº DE PEÇAS] peças</p><strong>[SEU PREÇO]</strong></div>
+<div class="card" style="background:#FFF1D1;padding:22px"><h3 class="h3">Combo Festa</h3><p style="margin:0">[Nº DE PEÇAS] peças</p><strong>[SEU PREÇO]</strong></div>
+</div>
+</div>
+</section>
+
+<section id="sobre" style="padding:64px 48px 80px;display:flex;flex-wrap:wrap;gap:48px;align-items:center;background:#F9DCDC">
+<div style="flex:1 1 440px;display:flex;flex-direction:column;gap:16px">
+<h2 class="h2">Sobre a Yamete</h2>
+<p style="margin:0;max-width:560px">Aqui o sushi anda na esteira e a gente cuida de cada detalhe: peixe fresco, arroz no ponto e um atendimento caprichado. [CONTE A HISTÓRIA DA SUA LOJA]</p>
+</div>
+<div style="flex:0 1 200px;display:flex;justify-content:center"><img src="./assets/4c1648018a8788e5cf97d0c446e9e603.png" alt="" aria-hidden="true" style="display:block;width:160px;height:auto"></div>
+</section>
+
+<img src="./assets/99f3a34898844dd4570e6c6c8fd92ebc.png" alt="" aria-hidden="true" style="display:block;width:100%;height:auto">
+
+<footer id="contato" style="padding:48px;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start">
+<img src="./assets/5935b92f4895e5b39519ecbfbc692e14.png" alt="Yamete Sushi" style="display:block;height:64px;width:auto">
+<div style="display:flex;flex-direction:column;gap:4px"><strong>Endereço</strong><span>[SEU ENDEREÇO]</span></div>
+<div style="display:flex;flex-direction:column;gap:4px"><strong>Horários</strong><span>[SEUS HORÁRIOS]</span></div>
+<div style="display:flex;flex-direction:column;gap:4px"><strong>Contato</strong><span>+55 19 99767-8772</span></div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
